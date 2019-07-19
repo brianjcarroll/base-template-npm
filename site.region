@@ -8,34 +8,13 @@
   </head>
   <body id="{squarespace.page-id}" class="{squarespace.page-classes}">
 
-    <header>
-      {.section website}
-        <h1>
-          <a href="/" data-content-field="site-title">
-            {.section logoImageUrl}
-             <img src="{logoImageUrl}?format=original" alt="{siteTitle}" />
-            {.or}
-              {siteTitle}
-            {.end}
-          </a>
-        </h1>
-        
-        {.section siteTagLine}
-          <p>{@}</p>
-        {.end}
-
-      {.end}
-
-      <squarespace:navigation navigationId="primary-nav" template="navigation" />
-    </header>
-
-    <main data-content-field="main-content">
-      {squarespace.main-content}
+    <div id="VideoBackgroundContainer"></div>
+    <main>
+      <div class="container">
+        <h1>Add a background video!</h1>
+        <p><a href="https://www.npmjs.com/package/@squarespace/video-background-rendering">Install the Video Background Rendering module</a></p>
+      </div>
     </main>
-
-    <footer>
-      <squarespace:block-field id="footer-blocks" columns="12" />
-    </footer>
 
     <script type="text/javascript" src="/scripts/site-bundle.js"></script>
 
